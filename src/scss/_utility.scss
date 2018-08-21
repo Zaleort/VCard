@@ -1,0 +1,27 @@
+/*
+    Clases CSS para aplicar estilos rápidamente
+*/
+
+.m-0 { margin: 0; }
+.ml-1 { margin-left: 1em; }
+.ml-2 { margin-left: 2em; }
+.ml-3 { margin-left: 3em; }
+
+.background-primary { background-color: $primary-color; }
+.background-secondary { background-color: $secondary-color; }
+
+.text-primary { color: $primary-color; }
+.text-secondary { color: $secondary-color; }
+
+.container, .container--full-width {
+    margin: auto;
+    margin-left: 25px;
+    margin-right: 25px; 
+}
+
+@media only screen and (min-width: $laptop-l) {
+    .container {
+        width: 1390px;
+        margin: auto;
+    }
+}

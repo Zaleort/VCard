@@ -1,5 +1,5 @@
 {
-  "name": "VCard",
+  "name": "vcard",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -34,7 +34,11 @@
       "plugin:vue/essential",
       "@vue/airbnb"
     ],
-    "rules": {},
+    "rules": {
+      "linebreak-style": [0, "windows"],
+      "indent": ["error", 4],
+      "max-len": [0, 0]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
