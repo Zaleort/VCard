@@ -37,6 +37,12 @@ export default {
   font-weight: 400;
 }
 
+@media only screen and (min-width: $mobile-l) {
+  .land-page-title {
+    font-size: 3rem;
+  }
+}
+
 @media only screen and (min-width: $tablet) {
   .land-page-title {
     font-size: 4rem;

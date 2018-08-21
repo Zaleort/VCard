@@ -23,7 +23,9 @@ export default {
     name: 'Navegacion',
     methods: {
         openMenu: () => {
-            document.getElementById('nav').classList.toggle('open-menu');
+            if (window.innerWidth < 768) {
+                document.getElementById('nav').classList.toggle('open-menu');
+            }
         },
     },
 };
@@ -56,6 +58,7 @@ export default {
 .nav {
     position: absolute;
     top: $nav-height;
+    z-index: 10;
     left: 0;
     right: 0;
     height: 0;
