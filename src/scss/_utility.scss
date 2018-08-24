@@ -13,11 +13,25 @@
 .text-primary { color: $primary-color; }
 .text-secondary { color: $secondary-color; }
 
-.container, .container--full-width {
+.container {
     margin: auto;
     margin-left: 25px;
     margin-right: 25px; 
 }
+
+.container--full-width {
+    margin: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 12px 16px;
+    transition: all 0.25s ease;
+}
+
 
 @media only screen and (min-width: $laptop-l) {
     .container {

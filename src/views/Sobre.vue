@@ -1,8 +1,8 @@
 <template>
-  <main class="main container about-grid">
+  <main class="container about-grid animate faster fade-in">
     <div id="resumen">
-      <h1 class="text-primary about-title">Sobre mí</h1>
-      <h2 class="m-0 about-subtitle">The amazing plantilla</h2>
+      <h1 class="text-primary title">Sobre mí</h1>
+      <h2 class="m-0 subtitle">The amazing plantilla</h2>
       <p>
         La plantilla increíble nace de la frustración al tener que lidiar con otra plantilla
         catastrófica, pesada y cuyo diseño dificultaba su personalización.
@@ -36,6 +36,45 @@
       </div>
   </main>
 </template>
+
+<script>
+export default {
+    name: 'sobre',
+    data: function () {
+        return {
+            windowHeight: 0,
+            elements: [],
+        };
+    },
+    methods: {
+        getWindowHeight: function () {
+            this.windowHeight = window.innerHeight;
+        },
+
+        checkPos: function () {
+            while (this.elements.length) {
+                const posFromTop = this.elements[0].getBoundingClientRect().top;
+                if (posFromTop - this.windowHeight > 0) return;
+
+                this.elements[0].className = this.elements[0].className.replace('animate-on-scroll', 'animate');
+            }
+        },
+    },
+
+    mounted: function () {
+        this.elements = document.getElementsByClassName('animate-on-scroll');
+        this.getWindowHeight();
+        this.checkPos();
+        document.addEventListener('scroll', this.checkPos);
+        document.addEventListener('resize', this.getWindowHeight);
+    },
+
+    beforeDestroy: function () {
+        document.removeEventListener('scroll', this.checkPos);
+        document.removeEventListener('resize', this.getWindowHeight);
+    },
+};
+</script>
 
 <style lang="scss">
 @import '../scss/variables';

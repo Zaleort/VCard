@@ -24,6 +24,7 @@
 }
 
 .animate-on-scroll {
+    animation-play-state: paused;
     opacity: 0;
 }
 
@@ -100,9 +101,21 @@
     animation-name: fade-in-up-slight;
 }
 
+@media only screen and (min-width: $tablet) {
+    .animate.mobile {
+        animation: unset;
+    }
+}
+
+@media only screen and (min-width: $laptop) {
+    .animate.tablet {
+        animation: unset;
+    }
+}
+
 
 @media (prefers-reduced-motion) {
-    .animated {
+    .animate {
       animation: unset !important;
       transition: none !important;
     }

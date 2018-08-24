@@ -1,5 +1,5 @@
 <template>
-  <main class="main container land-page">
+  <main class="container land-page">
     <h1 class="text-primary land-page-title animate fast fade-in-up">The amazing plantilla</h1>
     <h2 class="land-page-subtitle animate fast delay-500 fade-in">¿Podría existir una plantilla mejor que la de Kreative?</h2>
   </main>
