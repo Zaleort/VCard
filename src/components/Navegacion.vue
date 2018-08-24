@@ -72,6 +72,7 @@ export default {
 }
 
 .nav-link {
+    height: $nav-height;
     display: block;
     text-decoration: none;
     color: $primary-color;
