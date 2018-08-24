@@ -8,7 +8,7 @@ $accent-color: #FF006F;
 
 $text-color: #212121;
 $title-color: $primary-color;
-$subtitle-color: #00796B;
+$subtitle-color: $secondary-color;
 
 // Escala de grises
 
@@ -27,6 +27,7 @@ $grey900: #212121;
 
 $sans-serif: sans-serif;
 $serif: serif;
+$font-size: 1.15rem;
 
 // Breakpoints
 
@@ -40,3 +41,7 @@ $laptop-l: 1440px;
 // Navbar
 
 $nav-height: 75px;
+
+// Flags
+
+$rounded: true; // Activa el redondeado en algunos elementos

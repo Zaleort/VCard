@@ -11,7 +11,7 @@
             <ul class="nav-list">
                 <li @click="openMenu" ><router-link class="nav-link" to="/">Inicio</router-link></li>
                 <li @click="openMenu"><router-link  class="nav-link" to="/sobre">Sobre mí</router-link></li>
-                <li @click="openMenu"><router-link  class="nav-link" to="/servicios">FAQ</router-link></li>
+                <li @click="openMenu"><router-link  class="nav-link" to="/faq">FAQ</router-link></li>
                 <li @click="openMenu"><router-link  class="nav-link" to="/contacto">Contacto</router-link></li>
             </ul>
         </nav>

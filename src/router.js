@@ -7,26 +7,26 @@ import Faq from './views/Faq.vue';
 Vue.use(Router);
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'inicio',
-      component: Inicio,
-    },
-    {
-      path: '/sobre',
-      name: 'sobre',
-      component: Sobre,
-    },
-    {
-      path: '/faq',
-      name: 'faq',
-      component: Faq,
-    },
-    {
-      path: '/contacto',
-      name: 'contacto',
-      component: Sobre,
-    },
-  ],
+    routes: [
+        {
+            path: '/',
+            name: 'inicio',
+            component: Inicio,
+        },
+        {
+            path: '/sobre',
+            name: 'sobre',
+            component: Sobre,
+        },
+        {
+            path: '/faq',
+            name: 'faq',
+            component: Faq,
+        },
+        {
+            path: '/contacto',
+            name: 'contacto',
+            component: Sobre,
+        },
+    ],
 });
