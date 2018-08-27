@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Inicio from './views/Inicio.vue';
 import Sobre from './views/Sobre.vue';
 import Faq from './views/Faq.vue';
+import Contacto from './views/Contacto.vue';
 
 Vue.use(Router);
 
@@ -26,7 +27,7 @@ export default new Router({
         {
             path: '/contacto',
             name: 'contacto',
-            component: Sobre,
+            component: Contacto,
         },
     ],
 });
