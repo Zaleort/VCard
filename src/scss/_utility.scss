@@ -80,19 +80,25 @@
 
 // Buttons
 
-.button, .button-sm, .button-lg {
+.button {
     cursor: pointer;
     display: inline-block;
     transition: all 0.25s ease;
+    padding: 12px 16px;
 
     @if $rounded == true {
         border-radius: 5px;
     }
 }
 
-.button { padding: 12px 16px; }
-.button-sm { padding: 9px 12px; }
-.button-lg { padding: 16px 24px; }
+.button-sm {
+    @extend .button; 
+    padding: 9px 12px; 
+}
+.button-lg { 
+    @extend .button;
+    padding: 16px 24px; 
+}
 
 .button-primary {
     background-color: $primary-color;
@@ -107,6 +113,38 @@
 .button-accent {
     background-color: $accent-color;
     color: #ffffff;
+}
+
+// Mensajes de alerta
+
+.alert {
+    padding: 16px;
+    border: 1px solid;
+
+    @if $rounded == true {
+        border-radius: 5px;
+    }
+}
+
+.alert-error {
+    @extend .alert;
+    color: $red700;
+    border-color: $red500;
+    background-color: $red300;
+}
+
+.alert-success {
+    @extend .alert;
+    color: $green700;
+    border-color: $green500;
+    background-color: $green300;
+}
+
+.alert-info {
+    @extend .alert;
+    color: $blue700;
+    border-color: $blue500;
+    background-color: $blue300;
 }
 
 @media only screen and (min-width: $laptop-l) {
