@@ -98,6 +98,7 @@ export default {
 }
 
 .form-input {
+    background-color: white;
     padding: 8px 12px;
     font-size: 1.15rem;
     transition: all .25s ease;
