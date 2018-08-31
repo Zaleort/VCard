@@ -67,6 +67,7 @@
 .text-white { color:  #ffffff; }
 .text-black { color: #000000; }
 .text-dark-grey { color: $grey900; }
+.text-red { color: $red500; }
 
 .container {
     margin: auto 25px;
@@ -119,32 +120,29 @@
 
 .alert {
     padding: 16px;
-    border: 1px solid;
-
-    @if $rounded == true {
-        border-radius: 5px;
-    }
+    border-left: 5px solid;
+    background-color: white;
 }
 
 .alert-error {
     @extend .alert;
-    color: $red700;
+    color: $red500;
     border-color: $red500;
-    background-color: $red300;
+    background-color: $red50;
 }
 
 .alert-success {
     @extend .alert;
-    color: $green700;
+    color: $green500;
     border-color: $green500;
-    background-color: $green300;
+    background-color: $green50;
 }
 
 .alert-info {
     @extend .alert;
-    color: $blue700;
+    color: $blue500;
     border-color: $blue500;
-    background-color: $blue300;
+    background-color: $blue50;
 }
 
 @media only screen and (min-width: $laptop-l) {

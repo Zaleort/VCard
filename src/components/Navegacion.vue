@@ -82,6 +82,7 @@ export default {
 }
 
 .nav-link:hover, .router-link-exact-active {
+    text-decoration: none;
     color: $grey50;
     background-color: $primary-color;
 }
