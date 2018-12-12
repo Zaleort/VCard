@@ -97,6 +97,8 @@ export default {
                                 behavior: 'smooth',
                             });
                         });
+
+                        return;
                     }
 
                     this.errorMessage = 'Ha ocurrido un error desconocido';
